@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Obra";
+}
+
+<h1>Obra</h1> 
+
+@model PIM4.Models.Obra
+
+<div class="container mt-4">
+
+    <h1 class="text-center">@Model.Titulo</h1>
+
+    <div class="text-center mt-4">
+        <img src="@Model.Imagem" alt="@Model.Titulo" class="img-fluid mb-4" />
+    </div>
+
+    <p class="text-justify">@Model.Descricao</p>
+
+    <div class="text-center mt-4">
+        <a href="@Url.Action("Feedback", "Museu", new { id = Model.Id })" class="btn btn-success">Dar Feedback</a>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿<div class="container mt-5 text-center" style="position: relative; color: white;">
+    <!-- Título e descrição -->
+    <div class="text-center">
+        <h1 style="margin-top: 5%; font-size: 3rem;">Bem Vindo ao Inovatech</h1>
+        <p style="font-size: 1.5rem;">O Museu de Exploração de Marte</p>
+    </div>
+
+
+    <!-- Cards de Obras -->
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+            <div class="card bg-dark text-white border-0">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Obra 1">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Geografia de Marte</h5>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <a href="@Url.Action("Obra", "Museu", new { id = 1 })" class="btn btn-primary mt-2">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-dark text-white border-0">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Obra 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">mo</h5>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <a href="@Url.Action("Obra", "Museu", new { id = 2 })" class="btn btn-primary mt-2">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-dark text-white border-0">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Obra 3">
+                <div class="card-body text-center">
+                    <h5 class="card-title">pa</h5>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <a href="@Url.Action("Obra", "Museu", new { id = 3 })" class="btn btn-primary mt-2">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-end" style="margin-top: 50px;">
+        <a href="@Url.Action("LoginAdmin", "Museu")" class="btn btn-danger btn-circle">
+            <i class="fas fa-user-lock"></i>
+        </a>
+    </div>
+
+
+</div>

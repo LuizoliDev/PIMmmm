@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Login - Admin";
+}
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100 flex-column">
+    <!-- Título na parte superior -->
+    <h2 class="text-center text-white mb-4">Login Administrativo</h2>
+
+    <div class="col-md-4">
+        <!-- Mensagem de erro, se existir -->
+        @if (ViewBag.ErrorMessage != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+
+        <!-- Formulário de login -->
+        <form method="post" action="@Url.Action("LoginAdmin", "Museu")">
+            <div class="form-group mb-3">
+                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuário" required />
+            </div>
+            <div class="form-group mb-3">
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required />
+            </div>
+
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="@Url.Action("Index", "Home")" class="btn btn-danger" style="color: white;">Voltar</a>
+                <button type="submit" class="btn btn-success" style="color: white;">Entrar</button>
+            </div>
+        </form>
+    </div>
+</div>
